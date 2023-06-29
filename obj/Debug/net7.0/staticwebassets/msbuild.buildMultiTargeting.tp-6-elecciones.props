@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\tp-6-elecciones.props" />
+</Project>
