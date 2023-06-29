@@ -1,30 +1,65 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Dapper/2.0.143": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Dapper/2.0.143": {
+      "sha512": "Vh0U+Fins3IpS7APUlrzga3+1mswWngB5fZ0xj4w+FQR5JhJzA5uHV5rSepkahvmshNZUA0YcHtae9vFQpiVTw==",
+      "type": "package",
+      "path": "dapper/2.0.143",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.143.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Dapper >= 2.0.143"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\47697893\\.nuget\\packages\\": {},
+    "C:\\Users\\47572192\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\tp-6-elecciones.csproj",
+      "projectUniqueName": "C:\\Users\\47572192\\Desktop\\Elecciones2023\\tp-6-elecciones\\tp-6-elecciones.csproj",
       "projectName": "tp-6-elecciones",
-      "projectPath": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\tp-6-elecciones.csproj",
-      "packagesPath": "C:\\Users\\47697893\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\obj\\",
+      "projectPath": "C:\\Users\\47572192\\Desktop\\Elecciones2023\\tp-6-elecciones\\tp-6-elecciones.csproj",
+      "packagesPath": "C:\\Users\\47572192\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\47572192\\Desktop\\Elecciones2023\\tp-6-elecciones\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\47697893\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47572192\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -50,6 +85,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.143, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9ELSHJlsmnt3b3fY+oFZHWZdPbt28mcq2sT3wc34TwPvNaTpM/1dwvs3k+MyyFjHktav3oiy+dDPcvP5wv34AQ==",
+  "dgSpecHash": "D8bB/dt7aLVIgws0iEEsOmKRa0nu1LRRQZjvzBZdcD27kAUI58F1FXsFJQLRUmAO5LlDuxa+O7sTU+6sQ+/eZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\tp-6-elecciones.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\47572192\\Desktop\\Elecciones2023\\tp-6-elecciones\\tp-6-elecciones.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\47572192\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512"
+  ],
   "logs": []
 }
