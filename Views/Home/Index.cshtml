@@ -1,8 +1,26 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="cards-partidos_container">
+    <div class="card-grid">
+        @{
+            for (int i=0; i < 6; i++){
+            <div class="col">
+            <div class="card h-100">
+                <img src="@ViewBag.ListarPartidos[i].Logo" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.ListaPartidos[i].nombre</h5>
+                <img src="" alt="">
+                <p class="card-text">TEXTO</p>
+            </div>
+        <div class="card-footer">
+            <div class="submit">
+                <a href="LFC.cshtml">MAS INFORMACION :v</a>
+        </div>
+      </div>
+    </div>
+  </div>
+            }
+        }
+    </div>

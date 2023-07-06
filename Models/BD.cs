@@ -10,7 +10,7 @@ public class BD{
 
     public void CargarPartido(){
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql = "SELECT * FROM Pantentes";
+            string sql = "SELECT * FROM Partido";
             _ListadoPartidos=db.Query<Partido>(sql).ToList();
         }
     }
@@ -50,5 +50,16 @@ public class BD{
         return null;
     }
 
-    
+    public static List<Partido> ListarPartidos(){
+        return _ListadoPartidos;
+    }
+
+    public static List<Candidato> ListarCandidatos(int idPartido){
+    List<Candidato> candidatos = null;
+    using(SqlConnection db = new SqlConnection(_connectionString)){
+        string sql = "SELECT * FROM Candidato WHERE IdPartido = @idPartido";
+        candidatos = db.Query<Candidato>(sql, new { idPartido }).ToList();
+    }
+    return candidatos;
+}
 }
