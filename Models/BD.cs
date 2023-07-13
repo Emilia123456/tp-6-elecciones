@@ -8,14 +8,14 @@ public class BD{
     private static string _connectionString = @"Server=localhost;
     DataBase=Elecciones2023;Trusted_Connection=True;";
 
-    public void CargarPartido(){
+    public static void CargarPartido(){
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sql = "SELECT * FROM Partido";
             _ListadoPartidos=db.Query<Partido>(sql).ToList();
         }
     }
 
-    public void CargarCandidato(){
+    public static void CargarCandidato(){
         using(SqlConnection db = new SqlConnection(_connectionString)){
             string sql = "SELECT * FROM Candidato";
             _ListadoCandidatos=db.Query<Candidato>(sql).ToList();

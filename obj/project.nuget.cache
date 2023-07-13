@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r+p8O+0lPXcgeiJQKo57I5BQ6JDxhk+UIA7M3pR21qFLW2k+hVoDi3ChQNzHcz/8yN1IksrBeSc/3A/amu4sUQ==",
+  "dgSpecHash": "ecodp4BBpXB2wOG2mAhaiPMCQS/EEJ3iOQWcsM5tqv5YtCvRytESD+6AmDW7eJTiIFYDo+own1/QEyrGa3gvZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47572192\\Desktop\\homo\\tp-6-elecciones\\tp-6-elecciones.csproj",
+  "projectFilePath": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\tp-6-elecciones.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47572192\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\47572192\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
