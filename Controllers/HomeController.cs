@@ -20,6 +20,41 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult VerDetallePartido(int idPartido){
+        BD.CargarCandidato();
+        ViewBag.VerInfoPartido=BD.VerInfoPartido(idPartido);
+        ViewBag.candidatos = BD.ListarCandidatos(idPartido);
+        return View("VerDetallePartido");
+    }
+
+    IActionResult VerDetalleCandidato(int idCandidato){
+        //aca ponemos el formulario para cargar un candidato, que ahora no se cual es
+        return View();
+    }
+
+    [HttpPost]IActionResult GuardarCandidato(Candidato can)
+    {
+        //a chequear
+        BD.AgregarCandidato(can);
+        return View("VerDetallePartido");
+    }
+
+    IActionResult EliminarCandidato(int idCandidato /*,int idPartido*/)
+    {
+        //a chequear
+        BD.ElmiminarCandidato(idCandidato);
+        return View("VerDetallePartido");
+    }
+
+    IActionResult Elecciones(){
+        //en teoria es te dirige a una pagina que te cuenta lo que se vota este año, que yo creo que es el index, a chequear
+        return View();
+    }
+
+    ActionResult Creditos(){
+        //cosa de Pipa
+        return View();
+    }
     public IActionResult Privacy()
     {
         return View();

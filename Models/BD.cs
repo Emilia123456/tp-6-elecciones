@@ -22,14 +22,14 @@ public class BD{
         }
     }
 
-    public void AgregarCandidato(Candidato can){
+    public static void AgregarCandidato(Candidato can){
         string SQL = "INSERT INTO Candidatos(IdPartido, Nombre, Apellido, Foto, Pustulcaion, FechaNacimiento) Values (@pIdPartido, @pNombre, @pApellido,  @pFoto, @pPustulcaion, @pFechaNacimiento,)";
         using(SqlConnection db = new SqlConnection(_connectionString)){
             db.Execute(SQL, new{pIdPartido = can.IdPartido, pNombre=can.Nombre, pApellido=can.Apellido, pFoto=can.Foto, pPostulacion=can.Postulacion, pFechaNacimiento=can.FechaNacimiento});
         }
     }
 
-    public void ElmiminarCandidato(int IdCandidato){
+    public static void ElmiminarCandidato(int IdCandidato){
         string SQL = "DELETE FROM Candidatos WHERE IdCandidato = @id";
         using(SqlConnection db = new SqlConnection(_connectionString)){
         db.Execute(SQL, new{id = IdCandidato});
