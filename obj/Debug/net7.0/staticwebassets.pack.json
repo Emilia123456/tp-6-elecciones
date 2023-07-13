@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\tp-6-elecciones.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Candidatos\\larreta.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Candidatos\\larreta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Candidatos\\morales.jpg",
+      "PackagePath": "staticwebassets\\Imagenes\\Candidatos\\morales.jpg"
+    },
+    {
       "Id": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Juntos por el Cambio.JPG",
       "PackagePath": "staticwebassets\\Imagenes\\Juntos por el Cambio.JPG"
     },

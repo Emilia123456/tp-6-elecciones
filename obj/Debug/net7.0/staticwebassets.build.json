@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4fNfcWS90foM9/aFbUUebNJah5+blllvTiqpjMVhbvE=",
+  "Hash": "dpb+PaV2H7Hs7nH3u6XMLarc81NFpj9EiQix2buH9D8=",
   "Source": "tp-6-elecciones",
   "BasePath": "_content/tp-6-elecciones",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Candidatos\\larreta.jpg",
+      "SourceId": "tp-6-elecciones",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\",
+      "BasePath": "_content/tp-6-elecciones",
+      "RelativePath": "Imagenes/Candidatos/larreta.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\Candidatos\\larreta.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Candidatos\\morales.jpg",
+      "SourceId": "tp-6-elecciones",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\",
+      "BasePath": "_content/tp-6-elecciones",
+      "RelativePath": "Imagenes/Candidatos/morales.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\Candidatos\\morales.jpg"
     },
     {
       "Identity": "C:\\Users\\47572192\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Juntos por el Cambio.JPG",
