@@ -1,26 +1,52 @@
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Elecciones 2023";
 }
 
-<div class="cards-partidos_container">
-    <div class="card-grid">
-        @{
-            for (int i=0; i < 6; i++){
-            <div class="col">
-            <div class="card h-100">
-                <img src="@ViewBag.ListarPartidos[i].Logo" class="card-img-top" alt="...">
-            <div class="card-body">
-                <img src="" alt="">
-                <p class="card-text">TEXTO</p>
+
+<body>
+<h1 class="titulo"><center>Partidos </h1>
+    <div class="carta">
+    <div class="cards-partidos_container">
+        <div class="card-grid">
+            @{
+                for (int i=0; i < 3; i++){
+                <div class="col">
+                <div class="card h-100">
+                    <img src="@ViewBag.ListarPartidos[i].Logo" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"> @ViewBag.ListarPartidos[i].Nombre </p>
+                </div>
+            <div class="card-footer">
+                <div class="submit">
+                    <a href="VerDetallePartido.cshtml">MÁS INFORMACIÓN </a>
             </div>
-            
-        <div class="card-footer">
-            <div class="submit">
-                <a href="LFC.cshtml">MAS INFORMACION :v</a>
         </div>
-      </div>
+        </div>
     </div>
-  </div>
+                }
             }
-        }
+        </div>
     </div>
+    <div class="carta">
+    <div class="cards-partidos_container">
+        <div class="card-grid">
+            @{
+                for (int i=0; i < 3; i++){
+                <div class="col">
+                <div class="card h-100">
+                    <img src="@ViewBag.ListarPartidos[i+3].Logo" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"> @ViewBag.ListarPartidos[i+3].Nombre </p>
+                </div>
+            <div class="card-footer">
+                <div class="submit">
+                    <a href="VerDetallePartido.cshtml">MÁS INFORMACIÓN</a>
+            </div>
+        </div>
+        </div>
+    </div>
+                }
+            }
+        </div>
+    </div>
+</body>

@@ -1,22 +1,59 @@
-html {
-  font-size: 14px;
-}
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
 
 body {
   margin-bottom: 60px;
+}
+
+
+header{
+  background-color: #9ac6df;
+
+
+}
+
+
+.card-grid{
+  width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+
+.col{
+  padding: 30px;
+}
+
+
+.col img{
+  padding: 50px;
+  width: 470px;
+  height: 220px;
+}
+
+
+.col p{
+  text-align: center;
+  font-size: 25px;
+
+
+}
+
+
+.submit a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+.navbar-brand{
+  padding: 30px;
+}
+
+
+.titulo{
+  margin-top: 60px;
 }
