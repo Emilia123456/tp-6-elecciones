@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\tp-6-elecciones.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\BanderaDeArgentina.png",
+      "PackagePath": "staticwebassets\\Imagenes\\BanderaDeArgentina.png"
+    },
+    {
       "Id": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Candidatos\\bregman.jpg",
       "PackagePath": "staticwebassets\\Imagenes\\Candidatos\\bregman.jpg"
     },

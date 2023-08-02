@@ -24,7 +24,7 @@ public class HomeController : Controller
         BD.CargarCandidato();
         ViewBag.VerInfoPartido=BD.VerInfoPartido(idPartido);
         ViewBag.candidatos = BD.ListarCandidatos(idPartido);
-        return View("VerDetallePartido");
+        return View();
     }
 
     IActionResult VerDetalleCandidato(int idCandidato){

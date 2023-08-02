@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ITR05M7JtNrtviAVpV2qM73FzfbyWxzMVnu5WXeCbdg=",
+  "Hash": "WYAL1rI2az1UGMfe4iB+DaWfKROTtgDgwAC1d79WaeI=",
   "Source": "tp-6-elecciones",
   "BasePath": "_content/tp-6-elecciones",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\BanderaDeArgentina.png",
+      "SourceId": "tp-6-elecciones",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\wwwroot\\",
+      "BasePath": "_content/tp-6-elecciones",
+      "RelativePath": "Imagenes/BanderaDeArgentina.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\BanderaDeArgentina.png"
     },
     {
       "Identity": "C:\\Users\\47697893\\Downloads\\tp-6-elecciones\\wwwroot\\Imagenes\\Candidatos\\bregman.jpg",
