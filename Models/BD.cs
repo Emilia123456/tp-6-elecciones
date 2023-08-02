@@ -1,27 +1,16 @@
 using System.Data.SqlClient;
 using Dapper;
 public class BD{
+    
+    //sacar las listas
 
-    private static List<Partido> _ListadoPartidos = new List<Partido>{};
-    private static List<Candidato> _ListadoCandidatos = new List<Candidato>{};
 
     private static string _connectionString = @"Server=localhost;
     DataBase=Elecciones2023;Trusted_Connection=True;";
 
-    public static void CargarPartido(){
-        using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql = "SELECT * FROM Partido";
-            _ListadoPartidos=db.Query<Partido>(sql).ToList();
-        }
-    }
-
-    public static void CargarCandidato(){
-        using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql = "SELECT * FROM Candidato";
-            _ListadoCandidatos=db.Query<Candidato>(sql).ToList();
-        }
-    }
-
+   
+   
+    //agregar candidato hace el insert de  UN candidato: OK
     public static void AgregarCandidato(Candidato can){
         string SQL = "INSERT INTO Candidatos(IdPartido, Nombre, Apellido, Foto, Pustulcaion, FechaNacimiento) Values (@pIdPartido, @pNombre, @pApellido,  @pFoto, @pPustulcaion, @pFechaNacimiento,)";
         using(SqlConnection db = new SqlConnection(_connectionString)){
@@ -29,6 +18,7 @@ public class BD{
         }
     }
 
+    //eliminar candidato hace el insert de  UN candidato: OK
     public static void ElmiminarCandidato(int IdCandidato){
         string SQL = "DELETE FROM Candidatos WHERE IdCandidato = @id";
         using(SqlConnection db = new SqlConnection(_connectionString)){
@@ -36,28 +26,38 @@ public class BD{
         }
     }
 
+    //retorna la informacion de UN Pardido
     public static Partido VerInfoPartido(int idPartido){
+        //Ir a la base de datos y traer un partido
+
         for(int i=0; i<_ListadoPartidos.Count(); idPartido++){
             if(_ListadoPartidos[i].IdPartido == idPartido) { return _ListadoPartidos[i];}
         }
         return null;
     }
 
+    //retorna la informacion de UN canditato
     public static Candidato VerInfoCandidato(int idCandidato){
+        //Ir a la base de datos y traer un candidato
         for(int i=0; i<_ListadoCandidatos.Count(); i++){
             if(_ListadoCandidatos[i].IdCandidato == idCandidato) { return _ListadoCandidatos[i];}
         }
         return null;
     }
 
+    //devuelve la LISTA de partidos
     public static List<Partido> ListarPartidos(){
+        List<Partido> _ListadoPartidos = new List<Partido>{};
+        //ir a buscarla AHORA a la base de datos y ternornala
         return _ListadoPartidos;
     }
 
+    //devuelve la LISTA de candidatos de UN partido
     public static List<Candidato> ListarCandidatos(int idPartido){
     List<Candidato> candidatos = null;
     using(SqlConnection db = new SqlConnection(_connectionString)){
         string sql = "SELECT * FROM Candidato WHERE IdPartido = @idPartido";
+        //miren en la documentacion como reemplazae los @:  @idPartido
         candidatos = db.Query<Candidato>(sql, new { idPartido }).ToList();
     }
     return candidatos;

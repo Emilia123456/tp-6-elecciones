@@ -9,7 +9,7 @@
     <div class="cards-partidos_container">
         <div class="card-grid">
             @{
-                for (int i=0; i < 3; i++){
+                for (int i=0; i < 3; i++){ //cambiar a foreach
                 <div class="col">
                 <div class="card h-100">
                     <img src="@ViewBag.ListarPartidos[i].Logo" class="card-img-top" alt="...">
@@ -18,11 +18,12 @@
                 </div>
             <div class="card-footer">
                 <div class="submit">
-                    <a href="VerDetallePartido.cshtml">MÁS INFORMACIÓN </a>
+                    <a href='@Url.Action("VerDetallePartido", "Home", new {idPartido = @ViewBag.ListaPartidos[i].IdPartido})'>MÁS INFORMACIÓN </a>
             </div>
         </div>
         </div>
     </div>
+
                 }
             }
         </div>
@@ -40,7 +41,7 @@
                 </div>
             <div class="card-footer">
                 <div class="submit">
-                    <a href="VerDetallePartido.cshtml">MÁS INFORMACIÓN</a>
+                    <a href='@Url.Action("VerDetallePartido", "Home", new {idPartido = @ViewBag.ListaPartidos[i].idPartido})'>MÁS INFORMACIÓN </a>
             </div>
         </div>
         </div>

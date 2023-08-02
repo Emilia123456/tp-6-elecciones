@@ -15,13 +15,13 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        BD.CargarPartido();
+        
         ViewBag.ListarPartidos=BD.ListarPartidos();
         return View();
     }
 
     public IActionResult VerDetallePartido(int idPartido){
-        BD.CargarCandidato();
+        
         ViewBag.VerInfoPartido=BD.VerInfoPartido(idPartido);
         ViewBag.candidatos = BD.ListarCandidatos(idPartido);
         return View();
