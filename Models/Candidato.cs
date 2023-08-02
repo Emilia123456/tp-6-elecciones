@@ -10,4 +10,8 @@ public class Candidato{
     public Candidato(int idcandidato, int idpartido, string nombre, string apellido, DateTime fechanacimiento, string foto, string postulacion){
         
     }
+
+    public Candidato(){
+        
+    }
 }

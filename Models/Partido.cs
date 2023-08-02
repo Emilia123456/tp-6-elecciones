@@ -16,4 +16,6 @@ public class Partido{
         CantidadDiputados=cantidaddiputados;
         CantidadSenadores=cantidadsenadores;    
     }
+
+    public Partido(){}
 } 

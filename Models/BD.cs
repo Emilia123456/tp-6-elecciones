@@ -5,8 +5,7 @@ public class BD{
     //sacar las listas
 
 
-    private static string _connectionString = @"Server=localhost;
-    DataBase=Elecciones2023;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=localhost; DataBase=Elecciones2023;Trusted_Connection=True;";
 
    
    
@@ -26,40 +25,54 @@ public class BD{
         }
     }
 
-    //retorna la informacion de UN Pardido
-    public static Partido VerInfoPartido(int idPartido){
+    //retorna la informacion de UN Pardido: creo ok
+    public static Partido VerInfoPartido(int verPartido){
         //Ir a la base de datos y traer un partido
+    Partido partido = new Partido();
+    using(SqlConnection db = new SqlConnection(_connectionString)){        
+        string sql = "SELECT * FROM Partido WHERE IdPartido = @pverPartido";
+        partido = db.QueryFirstOrDefault<Partido>(sql, new { pverPartido  = verPartido});
+    }
+    return partido;
 
-        for(int i=0; i<_ListadoPartidos.Count(); idPartido++){
+
+      /*  for(int i=0; i<_ListadoPartidos.Count(); idPartido++){
             if(_ListadoPartidos[i].IdPartido == idPartido) { return _ListadoPartidos[i];}
         }
         return null;
+        */
     }
 
-    //retorna la informacion de UN canditato
+    //retorna la informacion de UN canditato: creo ok
     public static Candidato VerInfoCandidato(int idCandidato){
         //Ir a la base de datos y traer un candidato
-        for(int i=0; i<_ListadoCandidatos.Count(); i++){
-            if(_ListadoCandidatos[i].IdCandidato == idCandidato) { return _ListadoCandidatos[i];}
+        Candidato candidato = new Candidato();
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sql = "SELECT * FROM Candidato WHERE IdCandidato = @pIdCandidato";
+            candidato = db.QueryFirstOrDefault<Candidato>(sql, new { pIdCandidato= idCandidato});
         }
-        return null;
+        return candidato;
     }
 
-    //devuelve la LISTA de partidos
+    //devuelve la LISTA de partidos: creo ok
     public static List<Partido> ListarPartidos(){
         List<Partido> _ListadoPartidos = new List<Partido>{};
-        //ir a buscarla AHORA a la base de datos y ternornala
-        return _ListadoPartidos;
+        //ir a buscarla AHORA a la base de datos y retornearla
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sql = "SELECT * FROM Partido";
+            _ListadoPartidos = db.Query<Partido>(sql).ToList();
+            return _ListadoPartidos;
+        }
     }
 
-    //devuelve la LISTA de candidatos de UN partido
-    public static List<Candidato> ListarCandidatos(int idPartido){
-    List<Candidato> candidatos = null;
-    using(SqlConnection db = new SqlConnection(_connectionString)){
-        string sql = "SELECT * FROM Candidato WHERE IdPartido = @idPartido";
-        //miren en la documentacion como reemplazae los @:  @idPartido
-        candidatos = db.Query<Candidato>(sql, new { idPartido }).ToList();
+    //devuelve la LISTA de candidatos de UN partido: creo ok
+    public static List<Candidato> ListarCandidatos(int idpartido){
+        List<Candidato> candidatos = new List<Candidato>();
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            string sql = "SELECT * FROM Candidato WHERE IdPartido = @pidpartido";
+            candidatos = db.Query<Candidato>(sql, new { pidpartido= idpartido}).ToList();
+        }
+            return candidatos;
+        
     }
-    return candidatos;
-}
 }
