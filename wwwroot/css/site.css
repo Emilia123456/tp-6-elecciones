@@ -201,6 +201,10 @@ h1{
   text-align: center;
 }
 
+.col{
+  padding: 10px;
+}
+
 .titulo-principal{
   background-color: #afcde9;
   
