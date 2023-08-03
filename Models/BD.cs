@@ -11,15 +11,15 @@ public class BD{
    
     //agregar candidato hace el insert de  UN candidato: OK
     public static void AgregarCandidato(Candidato can){
-        string SQL = "INSERT INTO Candidatos(IdPartido, Nombre, Apellido, Foto, Pustulcaion, FechaNacimiento) Values (@pIdPartido, @pNombre, @pApellido,  @pFoto, @pPustulcaion, @pFechaNacimiento,)";
+        string SQL = "INSERT INTO Candidato(IdPartido, Apellido, Nombre, FechaNacimiento, Foto, Postulacion) Values (@pIdPartido, @pApellido, @pNombre, @pFechaNacimiento, @pFoto, @pPostulacion);";
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            db.Execute(SQL, new{pIdPartido = can.IdPartido, pNombre=can.Nombre, pApellido=can.Apellido, pFoto=can.Foto, pPostulacion=can.Postulacion, pFechaNacimiento=can.FechaNacimiento});
+            db.Execute(SQL, new{pIdPartido = can.IdPartido, pNombre=can.Nombre, pApellido=can.Apellido, pFechaNacimiento=can.FechaNacimiento, pFoto=can.Foto, pPostulacion=can.Postulacion});
         }
     }
 
     //eliminar candidato hace el insert de  UN candidato: OK
     public static void ElmiminarCandidato(int IdCandidato){
-        string SQL = "DELETE FROM Candidatos WHERE IdCandidato = @id";
+        string SQL = "DELETE FROM Candidato WHERE IdCandidato = @id";
         using(SqlConnection db = new SqlConnection(_connectionString)){
         db.Execute(SQL, new{id = IdCandidato});
         }
@@ -56,22 +56,18 @@ public class BD{
 
     //devuelve la LISTA de partidos: creo ok
     public static List<Partido> ListarPartidos(){
-        List<Partido> _ListadoPartidos = new List<Partido>{};
+        string sql = "SELECT * FROM Partido";
         //ir a buscarla AHORA a la base de datos y retornearla
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql = "SELECT * FROM Partido";
-            _ListadoPartidos = db.Query<Partido>(sql).ToList();
-            return _ListadoPartidos;
+            return db.Query<Partido>(sql).ToList();
         }
     }
 
     //devuelve la LISTA de candidatos de UN partido: creo ok
     public static List<Candidato> ListarCandidatos(int idpartido){
-        List<Candidato> candidatos = new List<Candidato>();
+        string sql = "SELECT * FROM Candidato WHERE IdPartido = @pidpartido";
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            string sql = "SELECT * FROM Candidato WHERE IdPartido = @pidpartido";
-            candidatos = db.Query<Candidato>(sql, new { pidpartido= idpartido}).ToList();
+            return db.Query<Candidato>(sql, new { pidPartido = idpartido}).ToList();
         }
-            return candidatos;
     }
 }

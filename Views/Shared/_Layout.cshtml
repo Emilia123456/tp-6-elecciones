@@ -26,7 +26,10 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Elecciones 2023</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="creditos">Creditos</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Creditos">Creditos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AgregarCandidato">Agregar Candidato</a>
                         </li>
                         <li class="nav-item">
                             <p>@ViewBag.nombres</p> 
@@ -75,7 +78,7 @@
         <div class="container">
             <ul class="footer-lista">
                 <li>
-                    <a asp-area="" asp-controller="creditos" asp-action="creditos">Créditos</a>
+                    <a href='@Url.Action("creditos", "home")'>Créditos</a>
                 </li>
                 <li>
                     <a asp-area="" asp-controller="Home" asp-action="noTenemos">Sitio Web</a>

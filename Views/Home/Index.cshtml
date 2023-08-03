@@ -6,28 +6,25 @@
 <body>
 <h1 class="titulo">Partidos </h1>
     <div class="cards">
-    <div class="cards-partidos_container">
-        <div class="card-grid">
-            @{
-                foreach (Partido partido in @ViewBag.ListarPartidos ){ //cambiar a foreach
-                <div class="col">
-                <div class="card h-100">
-                    <img src="@partido.Logo" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"> @partido.Nombre </p>
+        <div class="cards-partidos_container">
+            <div class="card-grid">
+                @{
+                    foreach (Partido partido in @ViewBag.ListarPartidos ){ //cambiar a foreach
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="@partido.Logo" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text"> @partido.Nombre </p>
+                        </div>
+                    <div class="card-footer">
+                        <div class="submit">
+                        <a href='@Url.Action("VerDetallePartido", "Home", new {idPartido = partido.IdPartido})'>Más información</a>
                 </div>
-            <div class="card-footer">
-                <div class="submit">
-                    <a href='@partido.SitioWeb'>MÁS INFORMACIÓN </a>
             </div>
-        </div>
         </div>
     </div>
 
                 }
             }
-        </div>
-    </div>
-    </div>
 
 </body>

@@ -1,4 +1,7 @@
-﻿using System.Diagnostics;
+﻿using System.ComponentModel;
+using System.IO.Compression;
+using System.Reflection.PortableExecutable;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using tp_6_elecciones.Models;
 
@@ -15,50 +18,43 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        int pipa=3;
-        ViewBag.numero = pipa;
-        ViewBag.ListarPartidos=BD.ListarPartidos();
+        ViewBag.ListarPartidos = BD.ListarPartidos();
         return View();
     }
 
-    public IActionResult VerDetallePartido(int verPartido, int verCandidato){
+    public IActionResult VerDetallePartido(int idPartido){
         
-        ViewBag.InfoPartido=BD.VerInfoPartido(verPartido);
-        ViewBag.candidatos = BD.ListarCandidatos(verCandidato);
+        ViewBag.InfoPartido = BD.VerInfoPartido(idPartido);
+        ViewBag.candidatos = BD.ListarCandidatos(idPartido);
         return View();
     }
 
-    IActionResult VerDetalleCandidato(int idCandidato){
-        //aca ponemos el formulario para cargar un candidato, que ahora no se cual es
+    public IActionResult AgregarCandidato(){
+        ViewBag.ListarPartidos = BD.ListarPartidos();
         return View();
     }
 
-    IActionResult creditos(){
-        return View();
-    }
-
-
-
-    [HttpPost]IActionResult GuardarCandidato(Candidato can)
+    [HttpPost]
+    public IActionResult GuardarCandidato(int idPartido, string Apellido, string Nombre, DateTime FechaNacimiento, string Foto, string Postulacion)
     {
-        //a chequear
-        BD.AgregarCandidato(can);
-        return View("VerDetallePartido");
+        BD.AgregarCandidato(new Candidato(idPartido, Apellido, Nombre, FechaNacimiento, Foto, Postulacion));
+        return RedirectToAction("Index", "Home");
     }
 
-    IActionResult EliminarCandidato(int idCandidato /*,int idPartido*/)
+
+    public IActionResult EliminarCandidato(int idCandidato /*,int idPartido*/)
     {
         //a chequear
         BD.ElmiminarCandidato(idCandidato);
         return View("VerDetallePartido");
     }
 
-    IActionResult Elecciones(){
+    public IActionResult Elecciones(){
         //en teoria es te dirige a una pagina que te cuenta lo que se vota este año, que yo creo que es el index, a chequear
         return View();
     }
 
-    ActionResult Creditos(){
+    public ActionResult Creditos(){
         //cosa de Pipa
         return View();
     }

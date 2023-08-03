@@ -1,52 +1,14 @@
-@{
-    ViewData["Title"] = "Elecciones 2023";
-}
+<form action="GuardarCandidato" method="post" class="form">
+    <select class="select-box" name="idPartido">
+        @foreach (Partido partido in @ViewBag.ListarPartidos ){
+                <option value="@partido.IdPartido">@partido.Nombre</option>
 
-
-<body>
-<h1 class="titulo"><center>Partidos </h1>
-    <div class="carta">
-    <div class="cards-partidos_container">
-        <div class="card-grid">
-            @{
-                for (int i=0; i < 3; i++){
-                <div class="col">
-                <div class="card h-100">
-                    <img src="@ViewBag.ListarPartidos[i].Logo" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"> @ViewBag.ListarPartidos[i].Nombre </p>
-                </div>
-            <div class="card-footer">
-                <div class="submit">
-                    <a href="VerDetallePartido.cshtml">MÁS INFORMACIÓN </a>
-            </div>
-        </div>
-        </div>
-    </div>
-                }
-            }
-        </div>
-    </div>
-    <div class="carta">
-    <div class="cards-partidos_container">
-        <div class="card-grid">
-            @{
-                for (int i=0; i < 3; i++){
-                <div class="col">
-                <div class="card h-100">
-                    <img src="@ViewBag.ListarPartidos[i+3].Logo" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"> @ViewBag.ListarPartidos[i+3].Nombre </p>
-                </div>
-            <div class="card-footer">
-                <div class="submit">
-                    <a href="VerDetallePartido.cshtml">MÁS INFORMACIÓN</a>
-            </div>
-        </div>
-        </div>
-    </div>
-                }
-            }
-        </div>
-    </div>
-</body>
+        }
+    </select>
+    <input type="text" class="form-control" name="Apellido" placeholder="Apellido">
+    <input type="text" class="form-control" name="Nombre" placeholder="Nombre">
+    <input type="date" class="form-control" name="FechaNacimiento" placeholder="Fecha de Nacimiento">
+    <input type="text" class="form-control" name="Foto" placeholder="Foto">
+    <input type="text" class="form-control" name="Postulacion" placeholder="Postulacion">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
