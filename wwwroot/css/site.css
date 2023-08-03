@@ -1,4 +1,220 @@
+html {
+  font-size: 14px;
+}
 
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+   
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #fafdff;
+}
+
+footer{
+  padding: 30px;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+
+  
+
+}
+.img-hor{
+  text-align: center;
+  
+}
+
+.p-hor{
+  display: flex;
+  flex-direction: row;
+}
+
+.p-hor p, .img-hor img{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit, .enviar{
+  
+  background-color: #d5e1f5;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.submit{
+  margin-top: 10px
+}
+
+.submit a{
+  text-decoration: none;
+}
+
+
+
+button{
+  border: none;
+}
+
+.opciones{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.contenedor img{
+  margin-top: 30px;
+}
+
+.enviar{
+  margin-top: 2px;
+}
+
+.index{
+  margin-bottom: 300px;
+}
+
+.tamaño-pagina{
+  margin-bottom: 340px;
+}
+
+
+p, a, li{
+  font-size: 20px;
+  font-family: 'Antic', sans-serif;
+  color: #0f192c;
+}
+
+h1, h2, a, button{
+  font-family: 'Quantico', sans-serif;
+  color: #394867;
+}
+
+h1{
+  text-align: center;
+  padding: 30px ;
+}
+
+
+.navbar a{
+  color: #072e52;
+  margin: 10px;
+}
+
+.navbar{
+  background: linear-gradient(70deg, #afcde9, #75AEE0);
+  padding: 10px;
+  
+}
+
+.footer{
+  background-color: #afcde9;
+  padding:30px ;
+  display: flex;
+}
+
+.footer a, .footer p{
+  color: #072e52;
+  text-decoration: none;
+  font-family: 'Quantico', sans-serif;
+  padding: 15px;
+  padding-left: 0px;
+
+}
+
+.footer p{
+  padding-left: 30px;
+}
+
+.container{
+  padding: 3px;
+}
+
+.logo_img{
+  padding: 15px;
+  margin-right: 10px;
+  width: auto;
+  height: 55px;
+
+}
+
+
+.footer-lista{
+  display: flex;
+  list-style:none
+}
+
+.nav-item p{
+  font-family: 'Quantico', sans-serif;
+  color: #F1F6F9;
+  margin: 17px;
+  margin-left: 1250px;
+}
+
+.cards{
+  width: 100%;
+  margin: 20px;
+  
+}
+
+.card-grid{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  
+}
+
+.cards img{
+  padding: 60px;
+  
+  width: 370px;
+  height: auto;
+  
+}
+
+.card-body {
+  text-align: center;
+}
+
+.titulo-principal{
+  background-color: #afcde9;
+  
+  padding: 10px;
+  padding-top: 30px;
+  margin: 1px;
+}
+
+.titulo-principal h2{
+  font-size: 35px;
+  margin-left: 20px;
+
+}
+/* 
 
 body {
   margin-bottom: 60px;
@@ -69,4 +285,4 @@ header img {
   padding: 2%;
   background-color: #558b96;
 }
-
+ */

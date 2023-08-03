@@ -33,6 +33,12 @@ public class HomeController : Controller
         return View();
     }
 
+    IActionResult creditos(){
+        return View();
+    }
+
+
+
     [HttpPost]IActionResult GuardarCandidato(Candidato can)
     {
         //a chequear
