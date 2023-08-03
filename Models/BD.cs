@@ -73,6 +73,5 @@ public class BD{
             candidatos = db.Query<Candidato>(sql, new { pidpartido= idpartido}).ToList();
         }
             return candidatos;
-        
     }
 }

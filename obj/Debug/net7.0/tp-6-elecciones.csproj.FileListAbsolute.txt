@@ -154,3 +154,42 @@ C:\Users\47572192\Downloads\a\tp-6-elecciones\obj\Debug\net7.0\scopedcss\project
 C:\Users\47572192\Downloads\a\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.csproj.CopyComplete
 C:\Users\47572192\Downloads\a\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.genruntimeconfig.cache
 C:\Users\47572192\Downloads\a\tp-6-elecciones\obj\Debug\net7.0\ref\tp-6-elecciones.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\appsettings.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\tp-6-elecciones.staticwebassets.runtime.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\tp-6-elecciones.exe
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\tp-6-elecciones.deps.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\tp-6-elecciones.runtimeconfig.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\tp-6-elecciones.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\tp-6-elecciones.pdb
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\Dapper.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.csproj.AssemblyReference.cache
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.AssemblyInfoInputs.cache
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.AssemblyInfo.cs
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.csproj.CoreCompileInputs.cache
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.RazorAssemblyInfo.cache
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.RazorAssemblyInfo.cs
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets\msbuild.tp-6-elecciones.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets\msbuild.build.tp-6-elecciones.props
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.tp-6-elecciones.props
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.tp-6-elecciones.props
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\scopedcss\bundle\tp-6-elecciones.styles.css
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\scopedcss\projectbundle\tp-6-elecciones.bundle.scp.css
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.csproj.CopyComplete
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\refint\tp-6-elecciones.dll
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.pdb
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\tp-6-elecciones.genruntimeconfig.cache
+C:\Users\47697893\Downloads\Nueva carpeta\tp-6-elecciones\obj\Debug\net7.0\ref\tp-6-elecciones.dll

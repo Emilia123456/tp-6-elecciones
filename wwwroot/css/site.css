@@ -18,15 +18,16 @@ header img {
 
 
 .card-grid{
-  width: 1300px;
+  width: 1150px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 30px;
 }
 
 
 .col{
-  padding: 30px;
+  padding: 35px;
 }
 
 
@@ -61,9 +62,11 @@ header img {
 
 .titulo{
   margin-top: 60px;
+  text-align: center;
 }
 
 .titulo-principal{
   padding: 2%;
+  background-color: #558b96;
 }
 
