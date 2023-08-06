@@ -29,6 +29,12 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult VerDetalleCandidato(int idCandidato){
+        
+        ViewBag.InfoCandidato = BD.VerInfoCandiato(idCandidato);
+        return View();
+    }
+
     public IActionResult AgregarCandidato(){
         ViewBag.ListarPartidos = BD.ListarPartidos();
         return View();

@@ -1,14 +1,32 @@
-<form action="GuardarCandidato" method="post" class="form">
-    <select class="select-box" name="idPartido">
-        @foreach (Partido partido in @ViewBag.ListarPartidos ){
-                <option value="@partido.IdPartido">@partido.Nombre</option>
+@{
+    ViewData["Title"] = "Creditos";
+}
 
-        }
-    </select>
-    <input type="text" class="form-control" name="Apellido" placeholder="Apellido">
-    <input type="text" class="form-control" name="Nombre" placeholder="Nombre">
-    <input type="date" class="form-control" name="FechaNacimiento" placeholder="Fecha de Nacimiento">
-    <input type="text" class="form-control" name="Foto" placeholder="Foto">
-    <input type="text" class="form-control" name="Postulacion" placeholder="Postulacion">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+<body class="agregar">
+    <div class="agregar-tamaño">
+        <center>
+        <form action="GuardarCandidato" method="post" class="form">
+                    <select class="select-box" name="idPartido">
+                        @foreach (Partido partido in @ViewBag.ListarPartidos ){
+                                <option value="@partido.IdPartido">@partido.Nombre</option>
+
+                        }
+                    </select>
+                    <input type="text" required class="form-control" name="Apellido" placeholder="Apellido">
+                    <input type="text" required class="form-control" name="Nombre" placeholder="Nombre">
+                    <input type="date" required class="form-control" name="FechaNacimiento" placeholder="Fecha de Nacimiento">
+                    <input type="text" required class="form-control" name="Foto" placeholder="Foto">
+                    <input type="text" required class="form-control" name="Postulacion" placeholder="Postulacion">
+                    
+                         <div class="botones">
+                            <button type="submit" class="boton">Enviar</button>
+                        </div>
+                        
+                    
+                    </div>
+                    
+                    
+                </form>
+        </center> 
+    </div>
+</body>

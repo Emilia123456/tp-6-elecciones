@@ -36,11 +36,6 @@ public class BD{
     return partido;
 
 
-      /*  for(int i=0; i<_ListadoPartidos.Count(); idPartido++){
-            if(_ListadoPartidos[i].IdPartido == idPartido) { return _ListadoPartidos[i];}
-        }
-        return null;
-        */
     }
 
     //retorna la informacion de UN canditato: creo ok

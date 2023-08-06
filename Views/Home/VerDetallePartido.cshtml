@@ -1,33 +1,50 @@
 @{
-    ViewData["Title"] = "Elecciones 2023";
+    ViewData["Title"] = "Partidos";
 }
 
 
 <body>
-<h1 class="titulo">@ViewBag.InfoPartido.Nombre </h1>
-<img src="@ViewBag.InfoPartido.Logo" class="card-img-top" alt="...">
+    <div class="centrador">
+        <h1 class="titulo">@ViewBag.InfoPartido.Nombre </h1>
+        <img class="logo-partido" src="@ViewBag.InfoPartido.Logo" class="card-img-top" alt="...">
+        
+    </div>
+    <div class="informacion">
+        <p class="titulo"> Nombre: @ViewBag.InfoPartido.Nombre </p>
+        <p class="titulo"> Sitio Web: @ViewBag.InfoPartido.SitioWeb </p>
+        <p class="titulo"> Fecha de Creación: @ViewBag.InfoPartido.FechaFundacion </p>
+        <p class="titulo"> Cantidad de diputados: @ViewBag.InfoPartido.CantidadDiputados </p>
+        <p class="titulo"> Cantidad de senadores: @ViewBag.InfoPartido.CantidadSenadores </p>
+    </div>
+    
+
 
     <div class="cards">
-    <div class="cards-partidos_container">
-        <div class="card-grid">
-         @{
-                foreach (Candidato candidato in @ViewBag.candidatos ){ //cambiar a foreach
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="@candidato.Foto" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text"> @candidato.Nombre  @candidato.Apellido </p>
-                </div>
+        <div class="cards-partidos_container">
+            <div class="card-grid">
+            @{
+                    foreach (Candidato candidato in @ViewBag.candidatos ){ //cambiar a foreach
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="@candidato.Foto" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"> @candidato.Nombre  @candidato.Apellido </p>
+                    </div>
                 <div class="card-footer">
-                    <div class="submit"></div>
-                </div>
+                            <div class="submit">
+                            <a href='@Url.Action("VerDetalleCandidato", "Home", new {idCandidato = candidato.IdCandidato})'>Más información</a>
+                    </div>
+            </div>
+    </div> 
         </div>
+               }
+            } 
+    </div>
+        <div class="botones"></div>
+            <center><a class="boton" asp-area="" asp-controller="Home" asp-action="AgregarCandidato">Agregar Candidato</a></center>
+        </div>
+        
     </div>
 
-                }
-            } 
-        </div>
-    </div>
-    </div>
 
 </body>

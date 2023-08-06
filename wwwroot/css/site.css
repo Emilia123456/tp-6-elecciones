@@ -57,12 +57,23 @@ footer{
   margin-bottom: 10px;
 }
 
-.submit, .enviar{
+.submit, .enviar, .boton{
   
   background-color: #d5e1f5;
   text-align: center;
   padding: 10px;
   margin: 10px;
+  text-decoration: none;
+}
+
+.boton{
+  font-size: 27px;
+}
+
+.botones{
+  padding: 40px;
+  padding-bottom: 30px;
+  
 }
 
 .submit{
@@ -218,75 +229,65 @@ h1{
   margin-left: 20px;
 
 }
-/* 
 
-body {
-  margin-bottom: 60px;
+.logo-partido{
+  width: 500px;
+  height: auto;
 }
 
-
-header{
-  background-color: #d0f5fc;
-
-
-}
-
-header img {
-  width: auto;
-  height: 30px;
-}
-
-
-.card-grid{
-  width: 1150px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 30px;
-}
-
-
-.col{
-  padding: 35px;
-}
-
-
-.col img{
-  padding: 50px;
-  width: 470px;
-  height: 220px;
-}
-
-
-.col p{
-  text-align: center;
-  font-size: 25px;
-
-
-}
-
-
-.submit a{
-  text-decoration: none;
-  color: black;
+.centrador, .col{
   display: flex;
   justify-content: center;
- 
-}
-
-
-.navbar-brand{
+  flex-direction: column;
+  align-items: center;
   padding: 30px;
 }
 
-
-.titulo{
-  margin-top: 60px;
-  text-align: center;
+.card-text{
+  color:#072e52;
+  padding: 20px;
+  font-size: 30px;
+  padding-top: 0px;
 }
 
-.titulo-principal{
-  padding: 2%;
-  background-color: #558b96;
+.creditos{
+  height: 100%;
+  width: 100%;
 }
- */
+
+.creditos-tamaño{
+  padding: 60px;
+  
+}
+
+.agregar{
+  height: 100%;
+  width: 100%;
+}
+
+.agregar-tamaño{
+  padding: 60px;
+  
+}
+
+form{
+  width: 900px;
+  
+}
+
+.form-control, .select-box{
+  color: #2c72b4;
+  font-size: 20px;
+}
+
+.select-box{
+  margin: 20px;
+}
+
+.informacion{
+  padding: 50px;
+}
+
+.informacion p{
+  color: #072e52;
+}
