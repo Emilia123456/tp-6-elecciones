@@ -31,7 +31,7 @@ public class HomeController : Controller
 
     public IActionResult VerDetalleCandidato(int idCandidato){
         
-        ViewBag.InfoCandidato = BD.VerInfoCandiato(idCandidato);
+        ViewBag.InfoCandidato = BD.VerInfoCandidato(idCandidato);
         return View();
     }
 

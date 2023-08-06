@@ -5,7 +5,7 @@
 <body class="agregar">
     <div class="agregar-tamaño">
         <center>
-        <form action="GuardarCandidato" method="post" class="form">
+        <form action="GuardarCandidato" method="post" class="form"> 
                     <select class="select-box" name="idPartido">
                         @foreach (Partido partido in @ViewBag.ListarPartidos ){
                                 <option value="@partido.IdPartido">@partido.Nombre</option>
@@ -22,11 +22,10 @@
                             <button type="submit" class="boton">Enviar</button>
                         </div>
                         
+         </form>
                     
-                    </div>
                     
-                    
-                </form>
+        
         </center> 
     </div>
 </body>
