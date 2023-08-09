@@ -502,25 +502,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\miled\\.nuget\\packages\\": {}
+    "C:\\Users\\47697893\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\miled\\OneDrive\\Desktop\\-\\ORT\\2023\\Programacion\\tp-6-elecciones\\tp-6-elecciones.csproj",
+      "projectUniqueName": "C:\\Users\\47697893\\Downloads\\nashe\\tp-6-elecciones\\tp-6-elecciones.csproj",
       "projectName": "tp-6-elecciones",
-      "projectPath": "C:\\Users\\miled\\OneDrive\\Desktop\\-\\ORT\\2023\\Programacion\\tp-6-elecciones\\tp-6-elecciones.csproj",
-      "packagesPath": "C:\\Users\\miled\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\miled\\OneDrive\\Desktop\\-\\ORT\\2023\\Programacion\\tp-6-elecciones\\obj\\",
+      "projectPath": "C:\\Users\\47697893\\Downloads\\nashe\\tp-6-elecciones\\tp-6-elecciones.csproj",
+      "packagesPath": "C:\\Users\\47697893\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\47697893\\Downloads\\nashe\\tp-6-elecciones\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\miled\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\47697893\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -567,7 +573,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

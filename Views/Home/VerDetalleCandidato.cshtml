@@ -5,14 +5,17 @@
 
 <body>
     <div class="centrador">
-        <h1 class="titulo">@ViewBag.InfoCandidato.Nombre @ViewBag.InfoCandidato.Apellido </h1>
-        <img class="logo-partido" src="@ViewBag.InfoCandidato.Foto" class="card-img-top" alt="...">
+        <div class="candidato-tamaño">
+            <h1 class="titulo">@ViewBag.InfoCandidato.Nombre @ViewBag.InfoCandidato.Apellido </h1>
+            <img class="logo-partido" src="@ViewBag.InfoCandidato.Foto" class="card-img-top" alt="...">
+        </div>
+        <div class="informacion">
+            <p class="titulo"> Nombre: @ViewBag.InfoCandidato.Nombre </p>
+            <p class="titulo"> Apellido: @ViewBag.InfoCandidato.Apellido </p>
+            <p class="titulo"> Fecha de nacimiento:  @ViewBag.InfoCandidato.FechaNacimiento.ToString("dd/MM/yyyy") </p>
+            <p class="titulo"> Postulación:  @ViewBag.InfoCandidato.Postulacion</p>
+        </div>
     </div>
-    <div class="informacion">
-        <p class="titulo"> Nombre: @ViewBag.InfoCandidato.Nombre </p>
-        <p class="titulo"> Apellido: @ViewBag.InfoCandidato.Apellido </p>
-        <p class="titulo"> Fecha de nacimiento:  @ViewBag.InfoCandidato.FechaNacimiento.ToString("dd/MM/yyyy") </p>
-        <p class="titulo"> Postulación:  @ViewBag.InfoCandidato.Postulacion</p>
-    </div>
+        
 
 </body>

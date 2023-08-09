@@ -11,7 +11,7 @@ public class BD{
    
     //agregar candidato hace el insert de  UN candidato: OK
     public static void AgregarCandidato(Candidato can){
-        string SQL = "INSERT INTO Candidato(IdPartido, Apellido, Nombre, FechaNacimiento, Foto, Postulacion) Values (@pIdPartido, @pApellido, @pNombre, @pFechaNacimiento, @pFoto, @pPostulacion);";
+        string SQL = "INSERT INTO Candidato(IdPartido, Nombre, Apellido, FechaNacimiento, Foto, Postulacion) Values (@pIdPartido, @pApellido, @pNombre, @pFechaNacimiento, @pFoto, @pPostulacion);";
         using(SqlConnection db = new SqlConnection(_connectionString)){
             db.Execute(SQL, new{pIdPartido = can.IdPartido, pNombre=can.Nombre, pApellido=can.Apellido, pFechaNacimiento=can.FechaNacimiento, pFoto=can.Foto, pPostulacion=can.Postulacion});
         }

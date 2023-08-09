@@ -256,8 +256,12 @@ h1{
 }
 
 .creditos-tamaño{
-  padding: 60px;
+  padding: 190px;
   
+}
+
+.candidato-tamaño{
+  padding: 60px;
 }
 
 .agregar{
